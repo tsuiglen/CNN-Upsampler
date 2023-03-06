@@ -104,21 +104,21 @@ def bilinear_interpolation(image, scale_factor):
     return new_image.astype(np.uint8)
 
 #define downsampling and upsampling scale
-scale = 10
+scale = 2
 #load input image
-original_image = cv.imread('LebronJames.jpg')
+original_image = cv.imread('test image.png')
 #transform from RGB to YCbCr space
 ycbcr_image = RGBToYCbCr_transform(original_image)
-cv.imwrite("ycbcrLebronJames.jpg", ycbcr_image)
+cv.imwrite("ycbcrtest image.png", ycbcr_image)
 #downsample image by defined factor
 downsample_ycbcr_image = downsample(ycbcr_image, scale)
-cv.imwrite("downsample_ycbcrLebronJames.jpg", downsample_ycbcr_image)
+cv.imwrite("downsample_ycbcrtest image.png", downsample_ycbcr_image)
 #upsample image by defined factor with bilinear interpolation
 upsample_ycbcr_image = bilinear_interpolation(downsample_ycbcr_image,scale)
-cv.imwrite("upsample_ycbcrLebronJames.jpg", upsample_ycbcr_image)
+cv.imwrite("upsample_ycbcrtest image.png", upsample_ycbcr_image)
 #transform from YCbCr to RGB space
 compressed_image = YCbCrtoRGB_transform(upsample_ycbcr_image)
-cv.imwrite("newLebronJames.jpg", compressed_image)
+cv.imwrite("newtest image.png", compressed_image)
 #calculate PSNR value
 psnr = calcPSNR(original_image, compressed_image)
 print('PSNR:',psnr)
