@@ -1,0 +1,340 @@
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ input_1 (InputLayer)        [(None, None, None, 1)]   0
+
+ conv2d (Conv2D)             (None, None, None, 32)    320
+
+ batch_normalization (BatchN  (None, None, None, 32)   128
+ ormalization)
+
+ conv2d_1 (Conv2D)           (None, None, None, 64)    18496
+
+ batch_normalization_1 (Batc  (None, None, None, 64)   256
+ hNormalization)
+
+ conv2d_2 (Conv2D)           (None, None, None, 128)   73856
+
+ batch_normalization_2 (Batc  (None, None, None, 128)  512
+ hNormalization)
+
+ conv2d_3 (Conv2D)           (None, None, None, 256)   295168
+
+ batch_normalization_3 (Batc  (None, None, None, 256)  1024
+ hNormalization)
+
+ conv2d_4 (Conv2D)           (None, None, None, 512)   1180160
+
+ batch_normalization_4 (Batc  (None, None, None, 512)  2048
+ hNormalization)
+
+ up_sampling2d (UpSampling2D  (None, None, None, 512)  0
+ )
+
+ conv2d_5 (Conv2D)           (None, None, None, 256)   1179904
+
+ batch_normalization_5 (Batc  (None, None, None, 256)  1024
+ hNormalization)
+
+ conv2d_6 (Conv2D)           (None, None, None, 128)   295040
+
+ batch_normalization_6 (Batc  (None, None, None, 128)  512
+ hNormalization)
+
+ conv2d_7 (Conv2D)           (None, None, None, 64)    73792
+
+ batch_normalization_7 (Batc  (None, None, None, 64)   256
+ hNormalization)
+
+ conv2d_8 (Conv2D)           (None, None, None, 32)    18464
+
+ batch_normalization_8 (Batc  (None, None, None, 32)   128
+ hNormalization)
+
+ conv2d_9 (Conv2D)           (None, None, None, 1)     289
+
+ activation (Activation)     (None, None, None, 1)     0
+
+ tf.math.multiply (TFOpLambd  (None, None, None, 1)    0
+ a)
+
+ tf.__operators__.add (TFOpL  (None, None, None, 1)    0
+ ambda)
+
+=================================================================
+Total params: 3,141,377
+Trainable params: 3,138,433
+Non-trainable params: 2,944
+_________________________________________________________________
+Model: "model_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ input_2 (InputLayer)        [(None, None, None, 1)]   0
+
+ conv2d_10 (Conv2D)          (None, None, None, 32)    320
+
+ batch_normalization_9 (Batc  (None, None, None, 32)   128
+ hNormalization)
+
+ conv2d_11 (Conv2D)          (None, None, None, 64)    18496
+
+ batch_normalization_10 (Bat  (None, None, None, 64)   256
+ chNormalization)
+
+ conv2d_12 (Conv2D)          (None, None, None, 128)   73856
+
+ batch_normalization_11 (Bat  (None, None, None, 128)  512
+ chNormalization)
+
+ conv2d_13 (Conv2D)          (None, None, None, 256)   295168
+
+ batch_normalization_12 (Bat  (None, None, None, 256)  1024
+ chNormalization)
+
+ conv2d_14 (Conv2D)          (None, None, None, 512)   1180160
+
+ batch_normalization_13 (Bat  (None, None, None, 512)  2048
+ chNormalization)
+
+ up_sampling2d_1 (UpSampling  (None, None, None, 512)  0
+ 2D)
+
+ conv2d_15 (Conv2D)          (None, None, None, 256)   1179904
+
+ batch_normalization_14 (Bat  (None, None, None, 256)  1024
+ chNormalization)
+
+ conv2d_16 (Conv2D)          (None, None, None, 128)   295040
+
+ batch_normalization_15 (Bat  (None, None, None, 128)  512
+ chNormalization)
+
+ conv2d_17 (Conv2D)          (None, None, None, 64)    73792
+
+ batch_normalization_16 (Bat  (None, None, None, 64)   256
+ chNormalization)
+
+ conv2d_18 (Conv2D)          (None, None, None, 32)    18464
+
+ batch_normalization_17 (Bat  (None, None, None, 32)   128
+ chNormalization)
+
+ conv2d_19 (Conv2D)          (None, None, None, 1)     289
+
+ activation_1 (Activation)   (None, None, None, 1)     0
+
+ tf.math.multiply_1 (TFOpLam  (None, None, None, 1)    0
+ bda)
+
+ tf.__operators__.add_1 (TFO  (None, None, None, 1)    0
+ pLambda)
+
+=================================================================
+Total params: 3,141,377
+Trainable params: 3,138,433
+Non-trainable params: 2,944
+_________________________________________________________________
+Model: "model_2"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ input_3 (InputLayer)        [(None, None, None, 1)]   0
+
+ conv2d_20 (Conv2D)          (None, None, None, 32)    320
+
+ batch_normalization_18 (Bat  (None, None, None, 32)   128
+ chNormalization)
+
+ conv2d_21 (Conv2D)          (None, None, None, 64)    18496
+
+ batch_normalization_19 (Bat  (None, None, None, 64)   256
+ chNormalization)
+
+ conv2d_22 (Conv2D)          (None, None, None, 128)   73856
+
+ batch_normalization_20 (Bat  (None, None, None, 128)  512
+ chNormalization)
+
+ conv2d_23 (Conv2D)          (None, None, None, 256)   295168
+
+ batch_normalization_21 (Bat  (None, None, None, 256)  1024
+ chNormalization)
+
+ conv2d_24 (Conv2D)          (None, None, None, 512)   1180160
+
+ batch_normalization_22 (Bat  (None, None, None, 512)  2048
+ chNormalization)
+
+ up_sampling2d_2 (UpSampling  (None, None, None, 512)  0
+ 2D)
+
+ conv2d_25 (Conv2D)          (None, None, None, 256)   1179904
+
+ batch_normalization_23 (Bat  (None, None, None, 256)  1024
+ chNormalization)
+
+ conv2d_26 (Conv2D)          (None, None, None, 128)   295040
+
+ batch_normalization_24 (Bat  (None, None, None, 128)  512
+ chNormalization)
+
+ conv2d_27 (Conv2D)          (None, None, None, 64)    73792
+
+ batch_normalization_25 (Bat  (None, None, None, 64)   256
+ chNormalization)
+
+ conv2d_28 (Conv2D)          (None, None, None, 32)    18464
+
+ batch_normalization_26 (Bat  (None, None, None, 32)   128
+ chNormalization)
+
+ conv2d_29 (Conv2D)          (None, None, None, 1)     289
+
+ activation_2 (Activation)   (None, None, None, 1)     0
+
+ tf.math.multiply_2 (TFOpLam  (None, None, None, 1)    0
+ bda)
+
+ tf.__operators__.add_2 (TFO  (None, None, None, 1)    0
+ pLambda)
+
+=================================================================
+Total params: 3,141,377
+Trainable params: 3,138,433
+Non-trainable params: 2,944
+_________________________________________________________________
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 800/800 [05:00<00:00,  2.66it/s] 
+Epoch 1/10
+160/160 [==============================] - ETA: 0s - loss: 1431.6968    
+Epoch 1: val_loss improved from inf to 1161.66077, saving model to model\modelY2.h5
+160/160 [==============================] - 408s 3s/step - loss: 1431.6968 - val_loss: 1161.6608
+Epoch 2/10
+160/160 [==============================] - ETA: 0s - loss: 533.6955  
+Epoch 2: val_loss improved from 1161.66077 to 293.96765, saving model to model\modelY2.h5
+160/160 [==============================] - 411s 3s/step - loss: 533.6955 - val_loss: 293.9677
+Epoch 3/10
+160/160 [==============================] - ETA: 0s - loss: 410.8607  
+Epoch 3: val_loss improved from 293.96765 to 221.04135, saving model to model\modelY2.h5
+160/160 [==============================] - 447s 3s/step - loss: 410.8607 - val_loss: 221.0414
+Epoch 4/10
+160/160 [==============================] - ETA: 0s - loss: 429.7086  
+Epoch 4: val_loss did not improve from 221.04135
+160/160 [==============================] - 452s 3s/step - loss: 429.7086 - val_loss: 233.1938
+Epoch 5/10
+160/160 [==============================] - ETA: 0s - loss: 371.7930  
+Epoch 5: val_loss improved from 221.04135 to 197.43216, saving model to model\modelY2.h5
+160/160 [==============================] - 433s 3s/step - loss: 371.7930 - val_loss: 197.4322
+Epoch 6/10
+160/160 [==============================] - ETA: 0s - loss: 367.1131  
+Epoch 6: val_loss improved from 197.43216 to 190.43861, saving model to model\modelY2.h5
+160/160 [==============================] - 418s 3s/step - loss: 367.1131 - val_loss: 190.4386
+Epoch 7/10
+160/160 [==============================] - ETA: 0s - loss: 366.3687  
+Epoch 7: val_loss did not improve from 190.43861
+160/160 [==============================] - 420s 3s/step - loss: 366.3687 - val_loss: 197.1288
+Epoch 8/10
+160/160 [==============================] - ETA: 0s - loss: 341.3418  
+Epoch 8: val_loss did not improve from 190.43861
+160/160 [==============================] - 418s 3s/step - loss: 341.3418 - val_loss: 192.0776
+Epoch 9/10
+160/160 [==============================] - ETA: 0s - loss: 332.4832  
+Epoch 9: val_loss improved from 190.43861 to 184.13126, saving model to model\modelY2.h5
+160/160 [==============================] - 424s 3s/step - loss: 332.4832 - val_loss: 184.1313
+Epoch 10/10
+160/160 [==============================] - ETA: 0s - loss: 342.6190  
+Epoch 10: val_loss did not improve from 184.13126
+160/160 [==============================] - 422s 3s/step - loss: 342.6190 - val_loss: 202.4387
+Epoch 1/10
+160/160 [==============================] - ETA: 0s - loss: 595.3248    
+Epoch 1: val_loss improved from inf to 347.18185, saving model to model\modelCb2.h5
+160/160 [==============================] - 358s 2s/step - loss: 595.3248 - val_loss: 347.1819
+Epoch 2/10
+160/160 [==============================] - ETA: 0s - loss: 111.9503  
+Epoch 2: val_loss improved from 347.18185 to 86.55140, saving model to model\modelCb2.h5
+160/160 [==============================] - 340s 2s/step - loss: 111.9503 - val_loss: 86.5514
+Epoch 3/10
+160/160 [==============================] - ETA: 0s - loss: 93.5219   
+Epoch 3: val_loss improved from 86.55140 to 74.17619, saving model to model\modelCb2.h5
+160/160 [==============================] - 309s 2s/step - loss: 93.5219 - val_loss: 74.1762
+Epoch 4/10
+160/160 [==============================] - ETA: 0s - loss: 79.2236  
+Epoch 4: val_loss improved from 74.17619 to 54.84715, saving model to model\modelCb2.h5
+160/160 [==============================] - 307s 2s/step - loss: 79.2236 - val_loss: 54.8471
+Epoch 5/10
+160/160 [==============================] - ETA: 0s - loss: 75.0693
+Epoch 5: val_loss did not improve from 54.84715
+160/160 [==============================] - 307s 2s/step - loss: 75.0693 - val_loss: 59.2158
+Epoch 6/10
+160/160 [==============================] - ETA: 0s - loss: 70.4515
+Epoch 6: val_loss improved from 54.84715 to 48.93792, saving model to model\modelCb2.h5
+160/160 [==============================] - 307s 2s/step - loss: 70.4515 - val_loss: 48.9379
+Epoch 7/10
+160/160 [==============================] - ETA: 0s - loss: 70.7528  
+Epoch 7: val_loss improved from 48.93792 to 43.66019, saving model to model\modelCb2.h5
+160/160 [==============================] - 322s 2s/step - loss: 70.7528 - val_loss: 43.6602
+Epoch 8/10
+160/160 [==============================] - ETA: 0s - loss: 66.1989   
+Epoch 8: val_loss did not improve from 43.66019
+160/160 [==============================] - 311s 2s/step - loss: 66.1989 - val_loss: 47.5391
+Epoch 9/10
+160/160 [==============================] - ETA: 0s - loss: 65.0379  
+Epoch 9: val_loss improved from 43.66019 to 39.73091, saving model to model\modelCb2.h5
+160/160 [==============================] - 309s 2s/step - loss: 65.0379 - val_loss: 39.7309
+Epoch 10/10
+160/160 [==============================] - ETA: 0s - loss: 62.8456  
+Epoch 10: val_loss did not improve from 39.73091
+160/160 [==============================] - 311s 2s/step - loss: 62.8456 - val_loss: 40.0379
+Epoch 1/10
+160/160 [==============================] - ETA: 0s - loss: 653.9105    
+Epoch 1: val_loss improved from inf to 413.21674, saving model to model\modelCr2.h5
+160/160 [==============================] - 311s 2s/step - loss: 653.9105 - val_loss: 413.2167
+Epoch 2/10
+160/160 [==============================] - ETA: 0s - loss: 100.5518  
+Epoch 2: val_loss improved from 413.21674 to 69.86787, saving model to model\modelCr2.h5
+160/160 [==============================] - 307s 2s/step - loss: 100.5518 - val_loss: 69.8679
+Epoch 3/10
+160/160 [==============================] - ETA: 0s - loss: 84.0014  
+Epoch 3: val_loss improved from 69.86787 to 46.43834, saving model to model\modelCr2.h5
+160/160 [==============================] - 323s 2s/step - loss: 84.0014 - val_loss: 46.4383
+Epoch 4/10
+160/160 [==============================] - ETA: 0s - loss: 65.3343  
+Epoch 4: val_loss did not improve from 46.43834
+160/160 [==============================] - 315s 2s/step - loss: 65.3343 - val_loss: 46.7024
+Epoch 5/10
+160/160 [==============================] - ETA: 0s - loss: 71.3901  
+Epoch 5: val_loss improved from 46.43834 to 43.19810, saving model to model\modelCr2.h5
+160/160 [==============================] - 316s 2s/step - loss: 71.3901 - val_loss: 43.1981
+Epoch 6/10
+160/160 [==============================] - ETA: 0s - loss: 64.7905  
+Epoch 6: val_loss improved from 43.19810 to 34.01791, saving model to model\modelCr2.h5
+160/160 [==============================] - 316s 2s/step - loss: 64.7905 - val_loss: 34.0179
+Epoch 7/10
+160/160 [==============================] - ETA: 0s - loss: 60.3913  
+Epoch 7: val_loss did not improve from 34.01791
+160/160 [==============================] - 315s 2s/step - loss: 60.3913 - val_loss: 35.7186
+Epoch 8/10
+160/160 [==============================] - ETA: 0s - loss: 59.7707  
+Epoch 8: val_loss did not improve from 34.01791
+160/160 [==============================] - 316s 2s/step - loss: 59.7707 - val_loss: 34.6335
+Epoch 9/10
+160/160 [==============================] - ETA: 0s - loss: 59.0184  
+Epoch 9: val_loss did not improve from 34.01791
+160/160 [==============================] - 316s 2s/step - loss: 59.0184 - val_loss: 36.1282
+Epoch 10/10
+160/160 [==============================] - ETA: 0s - loss: 57.8152  
+Epoch 10: val_loss improved from 34.01791 to 31.03996, saving model to model\modelCr2.h5
+160/160 [==============================] - 315s 2s/step - loss: 57.8152 - val_loss: 31.0400
+1/1 [==============================] - 3s 3s/step
+1/1 [==============================] - 3s 3s/step
+1/1 [==============================] - 3s 3s/step
+(500, 750)
+(500, 748)
+(500, 748)
+(500, 750, 3)
+(500, 750, 3)
+PSNR: 28.664510123056193
+SSIM: [[0.75591135]
+ [0.86231249]
+ [0.75258536]]

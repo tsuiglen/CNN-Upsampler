@@ -43,16 +43,29 @@ def YCbCrtoRGB_transform(image):
 
 
 
+from tensorflow.keras.layers import BatchNormalization
+
 def get_model(factor):
     input = Input(shape=(None, None, 1))
     x = Conv2D(32, 3, activation = 'relu', padding = 'same')(input)
+    x = BatchNormalization()(x)
     x = Conv2D(64, 3, activation = 'relu', padding = 'same')(x)
+    x = BatchNormalization()(x)
     x = Conv2D(128, 3, activation = 'relu', padding = 'same')(x)
-    # x = Conv2D(256, 3, activation = 'relu', padding = 'same')(x)
+    x = BatchNormalization()(x)
+    x = Conv2D(256, 3, activation = 'relu', padding = 'same')(x)
+    x = BatchNormalization()(x)
+    x = Conv2D(512, 3, activation = 'relu', padding = 'same')(x)
+    x = BatchNormalization()(x)
     x = UpSampling2D(factor)(x)
-    # x = Conv2D(128, 3, activation = 'relu', padding = 'same')(x)
+    x = Conv2D(256, 3, activation = 'relu', padding = 'same')(x)
+    x = BatchNormalization()(x)
+    x = Conv2D(128, 3, activation = 'relu', padding = 'same')(x)
+    x = BatchNormalization()(x)
     x = Conv2D(64, 3, activation = 'relu', padding = 'same')(x)
+    x = BatchNormalization()(x)
     x = Conv2D(32, 3, activation = 'relu', padding = 'same')(x)
+    x = BatchNormalization()(x)
     x = Conv2D(1, 3, activation = None, padding = 'same')(x)
     x = Activation('tanh')(x)
     x = x * 127.5 + 127.5
@@ -62,6 +75,7 @@ def get_model(factor):
     return model
 
 
+
 def get_data(factor, factorOther):
     Y_x = []
     Y_y = []
@@ -69,7 +83,8 @@ def get_data(factor, factorOther):
     Cb_y = []
     Cr_x = []
     Cr_y = []
-    for img_dir in tqdm(glob('C://Users//User//Downloads//DIV2K_train_HR//DIV2K_train_HR//*.png')):
+    # for img_dir in tqdm(glob('C://Users//User//Downloads//DIV2K_train_HR//DIV2K_train_HR//*.png')):
+    for img_dir in tqdm(glob('D://Downloads//DIV2K_train_HR//DIV2K_train_HR//*.png')):
         img = cv2.imread(img_dir)
         img_ycrcb = RGBToYCbCr_transform(img)
         y_channel = img_ycrcb[:,:,0]
