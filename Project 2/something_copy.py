@@ -130,7 +130,7 @@ def doModel(modelInput, modelName, x, y):
     tbCallBack = tf.keras.callbacks.TensorBoard(log_dir='./Graph', histogram_freq = 0, write_graph = True, write_images = True)
 
     batch_size = 4
-    epochs = 10 #100 maybe!
+    epochs = 100 #100 maybe!
     # can get data loader as input
     # psnr_ssim_callback = PSNRSSIMCallback(X_val, y_val)
     modelInput.fit(X_train, y_train, validation_data=(X_val,y_val), batch_size = batch_size, epochs = epochs, validation_split=0.1, callbacks=[tbCallBack, save_model_callback])
@@ -185,13 +185,13 @@ def downsample(channel, scale_factor):
 
 factor = 2
 factorOther = 4
-modelY = get_model(factor)
-modelCb = get_model(factorOther)
-modelCr = get_model(factorOther)
-Y_x,Y_y,Cb_x,Cb_y,Cr_x,Cr_y = get_data(factor,factorOther)
-doModel(modelY,"modelY2", Y_x, Y_y)
-doModel(modelCb,"modelCb2", Cb_x, Cb_y)
-doModel(modelCr,"modelCr2", Cr_x, Cr_y)
+# modelY = get_model(factor)
+# modelCb = get_model(factorOther)
+# modelCr = get_model(factorOther)
+# Y_x,Y_y,Cb_x,Cb_y,Cr_x,Cr_y = get_data(factor,factorOther)
+# doModel(modelY,"modelY3", Y_x, Y_y)
+# doModel(modelCb,"modelCb3", Cb_x, Cb_y)
+# doModel(modelCr,"modelCr3", Cr_x, Cr_y)
 
 # # plt.subplot(211)
 # # plt.imshow(x[0], cmap = 'gray')
@@ -199,9 +199,9 @@ doModel(modelCr,"modelCr2", Cr_x, Cr_y)
 # # plt.imshow(y[0], cmap = 'gray')
 # # plt.show()
 
-modelY = load_model('model/modelY2.h5')
-modelCb = load_model('model/modelCb2.h5')
-modelCr = load_model('model/modelCr2.h5')
+modelY = load_model('model/modelY3.h5')
+modelCb = load_model('model/modelCb3.h5')
+modelCr = load_model('model/modelCr3.h5')
 img = cv2.imread('LebronJames.jpg')
 # img_ycrcb = cv2.cvtColor(img, cv2.COLOR_BGR2YCrCb)
 img_ycrcb = RGBToYCbCr_transform(img)
@@ -239,6 +239,6 @@ print(result.shape)
 # plt.subplot(212)
 plt.imshow(result)
 plt.show()
-
+cv2.imwrite("OUTPUT.png", cv2.cvtColor(result,cv2.COLOR_RGB2BGR))
 print("PSNR: "+str(calcPSNR(img,result)))
 print("SSIM: "+str(calcSSIM(img,result)))

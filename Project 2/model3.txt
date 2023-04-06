@@ -1,0 +1,1412 @@
+PS D:\Documents\GitHub\4TN4\Project 2> py something_copy.py
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ input_1 (InputLayer)        [(None, None, None, 1)]   0
+
+ conv2d (Conv2D)             (None, None, None, 32)    320
+
+ batch_normalization (BatchN  (None, None, None, 32)   128
+ ormalization)
+
+ conv2d_1 (Conv2D)           (None, None, None, 64)    18496
+
+ batch_normalization_1 (Batc  (None, None, None, 64)   256
+ hNormalization)
+
+ conv2d_2 (Conv2D)           (None, None, None, 128)   73856
+
+ batch_normalization_2 (Batc  (None, None, None, 128)  512
+ hNormalization)
+
+ conv2d_3 (Conv2D)           (None, None, None, 256)   295168
+
+ batch_normalization_3 (Batc  (None, None, None, 256)  1024
+ hNormalization)
+
+ conv2d_4 (Conv2D)           (None, None, None, 512)   1180160
+
+ batch_normalization_4 (Batc  (None, None, None, 512)  2048
+ hNormalization)
+
+ up_sampling2d (UpSampling2D  (None, None, None, 512)  0
+ )
+
+ conv2d_5 (Conv2D)           (None, None, None, 256)   1179904
+
+ batch_normalization_5 (Batc  (None, None, None, 256)  1024
+ hNormalization)
+
+ conv2d_6 (Conv2D)           (None, None, None, 128)   295040
+
+ batch_normalization_6 (Batc  (None, None, None, 128)  512
+ hNormalization)
+
+ conv2d_7 (Conv2D)           (None, None, None, 64)    73792
+
+ batch_normalization_7 (Batc  (None, None, None, 64)   256
+ hNormalization)
+
+ conv2d_8 (Conv2D)           (None, None, None, 32)    18464
+
+ batch_normalization_8 (Batc  (None, None, None, 32)   128
+ hNormalization)
+
+ conv2d_9 (Conv2D)           (None, None, None, 1)     289
+
+ activation (Activation)     (None, None, None, 1)     0
+
+ tf.math.multiply (TFOpLambd  (None, None, None, 1)    0
+ a)
+
+ tf.__operators__.add (TFOpL  (None, None, None, 1)    0
+ ambda)
+
+=================================================================
+Total params: 3,141,377
+Trainable params: 3,138,433
+Non-trainable params: 2,944
+_________________________________________________________________
+Model: "model_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ input_2 (InputLayer)        [(None, None, None, 1)]   0
+
+ conv2d_10 (Conv2D)          (None, None, None, 32)    320
+
+ batch_normalization_9 (Batc  (None, None, None, 32)   128
+ hNormalization)
+
+ conv2d_11 (Conv2D)          (None, None, None, 64)    18496
+
+ batch_normalization_10 (Bat  (None, None, None, 64)   256
+ chNormalization)
+
+ conv2d_12 (Conv2D)          (None, None, None, 128)   73856
+
+ batch_normalization_11 (Bat  (None, None, None, 128)  512
+ chNormalization)
+
+ conv2d_13 (Conv2D)          (None, None, None, 256)   295168
+
+ batch_normalization_12 (Bat  (None, None, None, 256)  1024
+ chNormalization)
+
+ conv2d_14 (Conv2D)          (None, None, None, 512)   1180160
+
+ batch_normalization_13 (Bat  (None, None, None, 512)  2048
+ chNormalization)
+
+ up_sampling2d_1 (UpSampling  (None, None, None, 512)  0
+ 2D)
+
+ conv2d_15 (Conv2D)          (None, None, None, 256)   1179904
+
+ batch_normalization_14 (Bat  (None, None, None, 256)  1024
+ chNormalization)
+
+ conv2d_16 (Conv2D)          (None, None, None, 128)   295040
+
+ batch_normalization_15 (Bat  (None, None, None, 128)  512
+ chNormalization)
+
+ conv2d_17 (Conv2D)          (None, None, None, 64)    73792
+
+ batch_normalization_16 (Bat  (None, None, None, 64)   256
+ chNormalization)
+
+ conv2d_18 (Conv2D)          (None, None, None, 32)    18464
+
+ batch_normalization_17 (Bat  (None, None, None, 32)   128
+ chNormalization)
+
+ conv2d_19 (Conv2D)          (None, None, None, 1)     289
+
+ activation_1 (Activation)   (None, None, None, 1)     0
+
+ tf.math.multiply_1 (TFOpLam  (None, None, None, 1)    0
+ bda)
+
+ tf.__operators__.add_1 (TFO  (None, None, None, 1)    0
+ pLambda)
+
+=================================================================
+Total params: 3,141,377
+Trainable params: 3,138,433
+Non-trainable params: 2,944
+_________________________________________________________________
+Model: "model_2"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ input_3 (InputLayer)        [(None, None, None, 1)]   0
+
+ conv2d_20 (Conv2D)          (None, None, None, 32)    320
+
+ batch_normalization_18 (Bat  (None, None, None, 32)   128
+ chNormalization)
+
+ conv2d_21 (Conv2D)          (None, None, None, 64)    18496
+
+ batch_normalization_19 (Bat  (None, None, None, 64)   256
+ chNormalization)
+
+ conv2d_22 (Conv2D)          (None, None, None, 128)   73856
+
+ batch_normalization_20 (Bat  (None, None, None, 128)  512
+ chNormalization)
+
+ conv2d_23 (Conv2D)          (None, None, None, 256)   295168
+
+ batch_normalization_21 (Bat  (None, None, None, 256)  1024
+ chNormalization)
+
+ conv2d_24 (Conv2D)          (None, None, None, 512)   1180160
+
+ batch_normalization_22 (Bat  (None, None, None, 512)  2048
+ chNormalization)
+
+ up_sampling2d_2 (UpSampling  (None, None, None, 512)  0
+ 2D)
+
+ conv2d_25 (Conv2D)          (None, None, None, 256)   1179904
+
+ batch_normalization_23 (Bat  (None, None, None, 256)  1024
+ chNormalization)
+
+ conv2d_26 (Conv2D)          (None, None, None, 128)   295040
+
+ batch_normalization_24 (Bat  (None, None, None, 128)  512
+ chNormalization)
+
+ conv2d_27 (Conv2D)          (None, None, None, 64)    73792
+
+ batch_normalization_25 (Bat  (None, None, None, 64)   256
+ chNormalization)
+
+ conv2d_28 (Conv2D)          (None, None, None, 32)    18464
+
+ batch_normalization_26 (Bat  (None, None, None, 32)   128
+ chNormalization)
+
+ conv2d_29 (Conv2D)          (None, None, None, 1)     289
+
+ activation_2 (Activation)   (None, None, None, 1)     0
+ tf.__operators__.add_2 (TFO  (None, None, None, 1)    0      
+ pLambda)
+
+=================================================================
+Total params: 3,141,377
+Trainable params: 3,138,433
+Non-trainable params: 2,944
+_________________________________________________________________
+ 72%|███████████████████████████████████████████████████████████████████████████████████████                                 72%|████████████████████████████████100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 800/800 [04:49<00:00,  2.77it/s]
+Epoch 1/100
+g model to model\modelY3.h5
+160/160 [==============================] - 447s 3s/step - loss: 544.0548 - val_loss: 278.2973
+Epoch 3/100
+160/160 [==============================] - ETA: 0s - loss: 467.3946
+Epoch 3: val_loss improved from 278.29730 to 214.35335, saving model to model\modelY3.h5
+160/160 [==============================] - 421s 3s/step - loss: 467.3946 - val_loss: 214.3533
+Epoch 4/100
+160/160 [==============================] - ETA: 0s - loss: 395.4986
+Epoch 4: val_loss improved from 214.35335 to 199.07092, saving model to model\modelY3.h5
+160/160 [==============================] - 406s 3s/step - loss: 395.4986 - val_loss: 199.0709
+Epoch 5/100
+160/160 [==============================] - ETA: 0s - loss: 403.9615  
+Epoch 5: val_loss did not improve from 199.07092
+160/160 [==============================] - 403s 3s/step - loss: 403.9615 - val_loss: 246.8789
+Epoch 6/100
+160/160 [==============================] - ETA: 0s - loss: 377.3731  
+Epoch 6: val_loss did not improve from 199.07092
+160/160 [==============================] - 457s 3s/step - loss: 377.3731 - val_loss: 234.6987
+Epoch 7/100
+160/160 [==============================] - ETA: 0s - loss: 336.9151  
+Epoch 7: val_loss did not improve from 199.07092
+160/160 [==============================] - 449s 3s/step - loss: 336.9151 - val_loss: 222.4103
+Epoch 8/100
+160/160 [==============================] - ETA: 0s - loss: 356.3648  
+Epoch 8: val_loss improved from 199.07092 to 188.04552, saving model to model\modelY3.h5
+160/160 [==============================] - 433s 3s/step - loss: 356.3648 - val_loss: 188.0455
+Epoch 9/100
+160/160 [==============================] - ETA: 0s - loss: 326.3603  
+Epoch 9: val_loss did not improve from 188.04552
+160/160 [==============================] - 440s 3s/step - loss: 326.3603 - val_loss: 198.4542
+Epoch 10/100
+160/160 [==============================] - ETA: 0s - loss: 317.0498  
+Epoch 10: val_loss did not improve from 188.04552
+160/160 [==============================] - 366s 2s/step - loss: 317.0498 - val_loss: 190.4695
+Epoch 11/100
+160/160 [==============================] - ETA: 0s - loss: 327.8987  
+Epoch 11: val_loss improved from 188.04552 to 187.08243, saving model to model\modelY3.h5
+160/160 [==============================] - 363s 2s/step - loss: 327.8987 - val_loss: 187.0824
+Epoch 12/100
+160/160 [==============================] - ETA: 0s - loss: 300.6878  
+Epoch 12: val_loss did not improve from 187.08243
+160/160 [==============================] - 367s 2s/step - loss: 300.6878 - val_loss: 208.9488
+Epoch 13/100
+160/160 [==============================] - ETA: 0s - loss: 297.0442  
+Epoch 13: val_loss improved from 187.08243 to 171.86377, saving model to model\modelY3.h5
+160/160 [==============================] - 376s 2s/step - loss: 297.0442 - val_loss: 171.8638
+Epoch 14/100
+160/160 [==============================] - ETA: 0s - loss: 285.6020  
+Epoch 14: val_loss did not improve from 171.86377
+160/160 [==============================] - 378s 2s/step - loss: 285.6020 - val_loss: 205.5576
+Epoch 15/100
+160/160 [==============================] - ETA: 0s - loss: 282.2797  
+Epoch 15: val_loss did not improve from 171.86377
+160/160 [==============================] - 391s 2s/step - loss: 282.2797 - val_loss: 177.4457
+Epoch 16/100
+160/160 [==============================] - ETA: 0s - loss: 274.3077  
+Epoch 16: val_loss did not improve from 171.86377
+160/160 [==============================] - 391s 2s/step - loss: 274.3077 - val_loss: 195.9909
+Epoch 17/100
+160/160 [==============================] - ETA: 0s - loss: 252.7041  
+Epoch 17: val_loss improved from 171.86377 to 160.42067, saving model to model\modelY3.h5
+160/160 [==============================] - 360s 2s/step - loss: 252.7041 - val_loss: 160.4207
+Epoch 18/100
+160/160 [==============================] - ETA: 0s - loss: 252.4037  
+Epoch 18: val_loss did not improve from 160.42067
+160/160 [==============================] - 359s 2s/step - loss: 252.4037 - val_loss: 169.3897
+Epoch 19/100
+160/160 [==============================] - ETA: 0s - loss: 258.2847  
+Epoch 19: val_loss did not improve from 160.42067
+160/160 [==============================] - 360s 2s/step - loss: 258.2847 - val_loss: 197.8712
+Epoch 20/100
+160/160 [==============================] - ETA: 0s - loss: 275.3043  
+Epoch 20: val_loss did not improve from 160.42067
+160/160 [==============================] - 381s 2s/step - loss: 275.3043 - val_loss: 170.4638
+Epoch 21/100
+160/160 [==============================] - ETA: 0s - loss: 243.6832  
+Epoch 21: val_loss did not improve from 160.42067
+160/160 [==============================] - 404s 3s/step - loss: 243.6832 - val_loss: 191.1279
+Epoch 22/100
+160/160 [==============================] - ETA: 0s - loss: 215.7605  
+Epoch 22: val_loss did not improve from 160.42067
+160/160 [==============================] - 377s 2s/step - loss: 215.7605 - val_loss: 170.1806
+Epoch 23/100
+160/160 [==============================] - ETA: 0s - loss: 250.4666  
+Epoch 23: val_loss improved from 160.42067 to 155.46294, saving model to model\modelY3.h5
+160/160 [==============================] - 363s 2s/step - loss: 250.4666 - val_loss: 155.4629
+Epoch 24/100
+160/160 [==============================] - ETA: 0s - loss: 244.3037  
+Epoch 24: val_loss did not improve from 155.46294
+160/160 [==============================] - 363s 2s/step - loss: 244.3037 - val_loss: 167.3265
+Epoch 25/100
+160/160 [==============================] - ETA: 0s - loss: 224.3933  
+Epoch 25: val_loss did not improve from 155.46294
+160/160 [==============================] - 361s 2s/step - loss: 224.3933 - val_loss: 159.4376
+Epoch 26/100
+160/160 [==============================] - ETA: 0s - loss: 221.8528  
+Epoch 26: val_loss improved from 155.46294 to 143.40137, saving model to model\modelY3.h5
+160/160 [==============================] - 376s 2s/step - loss: 221.8528 - val_loss: 143.4014
+Epoch 27/100
+160/160 [==============================] - ETA: 0s - loss: 225.8702  
+Epoch 27: val_loss did not improve from 143.40137
+160/160 [==============================] - 387s 2s/step - loss: 225.8702 - val_loss: 146.0036
+Epoch 28/100
+160/160 [==============================] - ETA: 0s - loss: 206.8600  
+Epoch 28: val_loss did not improve from 143.40137
+160/160 [==============================] - 379s 2s/step - loss: 206.8600 - val_loss: 154.0432
+Epoch 29/100
+160/160 [==============================] - ETA: 0s - loss: 219.5680  
+Epoch 29: val_loss did not improve from 143.40137
+160/160 [==============================] - 374s 2s/step - loss: 219.5680 - val_loss: 176.3811
+Epoch 30/100
+160/160 [==============================] - ETA: 0s - loss: 221.5379  
+Epoch 30: val_loss did not improve from 143.40137
+160/160 [==============================] - 378s 2s/step - loss: 221.5379 - val_loss: 161.7962
+Epoch 31/100
+160/160 [==============================] - ETA: 0s - loss: 201.6745  
+Epoch 31: val_loss did not improve from 143.40137
+160/160 [==============================] - 380s 2s/step - loss: 201.6745 - val_loss: 161.8466
+Epoch 32/100
+160/160 [==============================] - ETA: 0s - loss: 210.3543  
+Epoch 32: val_loss did not improve from 143.40137
+160/160 [==============================] - 389s 2s/step - loss: 210.3543 - val_loss: 160.1461
+Epoch 33/100
+160/160 [==============================] - ETA: 0s - loss: 209.9929  
+Epoch 33: val_loss improved from 143.40137 to 142.78152, saving model to model\modelY3.h5
+160/160 [==============================] - 397s 2s/step - loss: 209.9929 - val_loss: 142.7815
+Epoch 34/100
+160/160 [==============================] - ETA: 0s - loss: 202.8947  
+Epoch 34: val_loss did not improve from 142.78152
+160/160 [==============================] - 379s 2s/step - loss: 202.8947 - val_loss: 148.2345
+Epoch 35/100
+160/160 [==============================] - ETA: 0s - loss: 203.5372  
+Epoch 35: val_loss did not improve from 142.78152
+160/160 [==============================] - 398s 2s/step - loss: 203.5372 - val_loss: 169.3153
+Epoch 36/100
+160/160 [==============================] - ETA: 0s - loss: 201.2015  
+Epoch 36: val_loss did not improve from 142.78152
+160/160 [==============================] - 378s 2s/step - loss: 201.2015 - val_loss: 150.6386
+Epoch 37/100
+160/160 [==============================] - ETA: 0s - loss: 191.0573  
+Epoch 37: val_loss improved from 142.78152 to 139.80861, saving model to model\modelY3.h5
+160/160 [==============================] - 420s 3s/step - loss: 191.0573 - val_loss: 139.8086
+Epoch 38/100
+160/160 [==============================] - ETA: 0s - loss: 200.6853  
+Epoch 38: val_loss did not improve from 139.80861
+160/160 [==============================] - 501s 3s/step - loss: 200.6853 - val_loss: 142.0543
+Epoch 39/100
+160/160 [==============================] - ETA: 0s - loss: 204.8842  
+Epoch 39: val_loss did not improve from 139.80861
+160/160 [==============================] - 543s 3s/step - loss: 204.8842 - val_loss: 147.4419
+Epoch 40/100
+160/160 [==============================] - ETA: 0s - loss: 189.9475  
+Epoch 40: val_loss did not improve from 139.80861
+160/160 [==============================] - 554s 3s/step - loss: 189.9475 - val_loss: 154.2426
+Epoch 41/100
+160/160 [==============================] - ETA: 0s - loss: 195.4813  
+Epoch 41: val_loss did not improve from 139.80861
+160/160 [==============================] - 498s 3s/step - loss: 195.4813 - val_loss: 178.8205
+Epoch 42/100
+160/160 [==============================] - ETA: 0s - loss: 192.5849  
+Epoch 42: val_loss did not improve from 139.80861
+160/160 [==============================] - 513s 3s/step - loss: 192.5849 - val_loss: 146.4725
+Epoch 43/100
+160/160 [==============================] - ETA: 0s - loss: 177.9168  
+Epoch 43: val_loss did not improve from 139.80861
+160/160 [==============================] - 420s 3s/step - loss: 177.9168 - val_loss: 155.3441
+Epoch 44/100
+160/160 [==============================] - ETA: 0s - loss: 181.0099  
+Epoch 44: val_loss did not improve from 139.80861
+160/160 [==============================] - 372s 2s/step - loss: 181.0099 - val_loss: 148.1848
+Epoch 45/100
+160/160 [==============================] - ETA: 0s - loss: 185.0185  
+Epoch 45: val_loss improved from 139.80861 to 138.61996, saving model to model\modelY3.h5
+160/160 [==============================] - 386s 2s/step - loss: 185.0185 - val_loss: 138.6200
+Epoch 46/100
+160/160 [==============================] - ETA: 0s - loss: 179.7854  
+Epoch 46: val_loss did not improve from 138.61996
+160/160 [==============================] - 403s 3s/step - loss: 179.7854 - val_loss: 139.3527
+Epoch 47/100
+160/160 [==============================] - ETA: 0s - loss: 177.9420  
+Epoch 47: val_loss improved from 138.61996 to 138.01526, saving model to model\modelY3.h5
+160/160 [==============================] - 408s 3s/step - loss: 177.9420 - val_loss: 138.0153
+Epoch 48/100
+160/160 [==============================] - ETA: 0s - loss: 188.4518  
+Epoch 48: val_loss did not improve from 138.01526
+160/160 [==============================] - 384s 2s/step - loss: 188.4518 - val_loss: 147.2348
+Epoch 49/100
+160/160 [==============================] - ETA: 0s - loss: 185.6910  
+Epoch 49: val_loss did not improve from 138.01526
+160/160 [==============================] - 390s 2s/step - loss: 185.6910 - val_loss: 152.6876
+Epoch 50/100
+160/160 [==============================] - ETA: 0s - loss: 172.8124  
+Epoch 50: val_loss did not improve from 138.01526
+160/160 [==============================] - 369s 2s/step - loss: 172.8124 - val_loss: 141.9596
+Epoch 51/100
+160/160 [==============================] - ETA: 0s - loss: 175.0574  
+Epoch 51: val_loss did not improve from 138.01526
+160/160 [==============================] - 367s 2s/step - loss: 175.0574 - val_loss: 144.8685
+Epoch 52/100
+160/160 [==============================] - ETA: 0s - loss: 180.4116  
+Epoch 52: val_loss did not improve from 138.01526
+160/160 [==============================] - 370s 2s/step - loss: 180.4116 - val_loss: 148.4584
+Epoch 53/100
+160/160 [==============================] - ETA: 0s - loss: 175.9165  
+Epoch 53: val_loss did not improve from 138.01526
+160/160 [==============================] - 381s 2s/step - loss: 175.9165 - val_loss: 141.9169
+Epoch 54/100
+160/160 [==============================] - ETA: 0s - loss: 177.0101  
+Epoch 54: val_loss did not improve from 138.01526
+160/160 [==============================] - 374s 2s/step - loss: 177.0101 - val_loss: 151.4176
+Epoch 55/100
+160/160 [==============================] - ETA: 0s - loss: 169.2351  
+Epoch 55: val_loss did not improve from 138.01526
+160/160 [==============================] - 390s 2s/step - loss: 169.2351 - val_loss: 142.1959
+Epoch 56/100
+160/160 [==============================] - ETA: 0s - loss: 174.3747  
+Epoch 56: val_loss did not improve from 138.01526
+160/160 [==============================] - 380s 2s/step - loss: 174.3747 - val_loss: 143.1632
+Epoch 57/100
+160/160 [==============================] - ETA: 0s - loss: 158.2420  
+Epoch 57: val_loss improved from 138.01526 to 137.63246, saving model to model\modelY3.h5
+160/160 [==============================] - 369s 2s/step - loss: 158.2420 - val_loss: 137.6325
+Epoch 58/100
+160/160 [==============================] - ETA: 0s - loss: 169.2849  
+Epoch 58: val_loss did not improve from 137.63246
+160/160 [==============================] - 360s 2s/step - loss: 169.2849 - val_loss: 147.3780
+Epoch 59/100
+160/160 [==============================] - ETA: 0s - loss: 168.7421  
+Epoch 59: val_loss did not improve from 137.63246
+160/160 [==============================] - 395s 2s/step - loss: 168.7421 - val_loss: 165.7660
+Epoch 60/100
+160/160 [==============================] - ETA: 0s - loss: 177.9196  
+Epoch 60: val_loss did not improve from 137.63246
+160/160 [==============================] - 379s 2s/step - loss: 177.9196 - val_loss: 173.5222
+Epoch 61/100
+160/160 [==============================] - ETA: 0s - loss: 170.3009  
+Epoch 61: val_loss did not improve from 137.63246
+160/160 [==============================] - 387s 2s/step - loss: 170.3009 - val_loss: 140.1116
+Epoch 62/100
+160/160 [==============================] - ETA: 0s - loss: 167.1299  
+Epoch 62: val_loss did not improve from 137.63246
+160/160 [==============================] - 381s 2s/step - loss: 167.1299 - val_loss: 145.3514
+Epoch 63/100
+160/160 [==============================] - ETA: 0s - loss: 179.0986  
+Epoch 63: val_loss did not improve from 137.63246
+160/160 [==============================] - 375s 2s/step - loss: 179.0986 - val_loss: 160.0585
+Epoch 64/100
+160/160 [==============================] - ETA: 0s - loss: 163.8267  
+Epoch 64: val_loss did not improve from 137.63246
+160/160 [==============================] - 374s 2s/step - loss: 163.8267 - val_loss: 140.3608
+Epoch 65/100
+160/160 [==============================] - ETA: 0s - loss: 167.4509  
+Epoch 65: val_loss improved from 137.63246 to 133.62584, saving model to model\modelY3.h5
+160/160 [==============================] - 375s 2s/step - loss: 167.4509 - val_loss: 133.6258
+Epoch 66/100
+160/160 [==============================] - ETA: 0s - loss: 158.3209  
+Epoch 66: val_loss did not improve from 133.62584
+160/160 [==============================] - 374s 2s/step - loss: 158.3209 - val_loss: 156.7161
+Epoch 67/100
+160/160 [==============================] - ETA: 0s - loss: 163.4724
+Epoch 67: val_loss did not improve from 133.62584
+160/160 [==============================] - 371s 2s/step - loss: 163.4724 - val_loss: 134.1466
+Epoch 68/100
+160/160 [==============================] - ETA: 0s - loss: 159.4101
+Epoch 68: val_loss did not improve from 133.62584
+160/160 [==============================] - 361s 2s/step - loss: 159.4101 - val_loss: 152.4891
+Epoch 69/100
+160/160 [==============================] - ETA: 0s - loss: 159.3277
+Epoch 69: val_loss did not improve from 133.62584
+160/160 [==============================] - 363s 2s/step - loss: 159.3277 - val_loss: 136.3832
+Epoch 70/100
+160/160 [==============================] - ETA: 0s - loss: 159.5133  
+Epoch 70: val_loss improved from 133.62584 to 130.58696, saving model to model\modelY3.h5
+160/160 [==============================] - 371s 2s/step - loss: 159.5133 - val_loss: 130.5870
+Epoch 71/100
+160/160 [==============================] - ETA: 0s - loss: 167.0506  
+Epoch 71: val_loss did not improve from 130.58696
+160/160 [==============================] - 380s 2s/step - loss: 167.0506 - val_loss: 139.6916
+Epoch 72/100
+160/160 [==============================] - ETA: 0s - loss: 150.7000  
+Epoch 72: val_loss did not improve from 130.58696
+160/160 [==============================] - 390s 2s/step - loss: 150.7000 - val_loss: 148.2940
+Epoch 73/100
+160/160 [==============================] - ETA: 0s - loss: 168.4950  
+Epoch 73: val_loss did not improve from 130.58696
+160/160 [==============================] - 378s 2s/step - loss: 168.4950 - val_loss: 148.0209
+Epoch 74/100
+160/160 [==============================] - ETA: 0s - loss: 152.5680  
+Epoch 74: val_loss did not improve from 130.58696
+160/160 [==============================] - 384s 2s/step - loss: 152.5680 - val_loss: 130.9122
+Epoch 75/100
+160/160 [==============================] - ETA: 0s - loss: 156.9003  
+Epoch 75: val_loss did not improve from 130.58696
+160/160 [==============================] - 390s 2s/step - loss: 156.9003 - val_loss: 132.1346
+Epoch 76/100
+160/160 [==============================] - ETA: 0s - loss: 152.6107  
+Epoch 76: val_loss did not improve from 130.58696
+160/160 [==============================] - 421s 3s/step - loss: 152.6107 - val_loss: 132.3128
+Epoch 77/100
+160/160 [==============================] - ETA: 0s - loss: 155.1871  
+Epoch 77: val_loss did not improve from 130.58696
+160/160 [==============================] - 416s 3s/step - loss: 155.1871 - val_loss: 144.4509
+Epoch 78/100
+160/160 [==============================] - ETA: 0s - loss: 151.9226  
+Epoch 78: val_loss did not improve from 130.58696
+160/160 [==============================] - 390s 2s/step - loss: 151.9226 - val_loss: 149.4701
+Epoch 79/100
+160/160 [==============================] - ETA: 0s - loss: 153.8908  
+Epoch 79: val_loss did not improve from 130.58696
+160/160 [==============================] - 379s 2s/step - loss: 153.8908 - val_loss: 147.3805
+Epoch 80/100
+160/160 [==============================] - ETA: 0s - loss: 155.0005  
+Epoch 80: val_loss did not improve from 130.58696
+160/160 [==============================] - 396s 2s/step - loss: 155.0005 - val_loss: 140.7378
+Epoch 81/100
+160/160 [==============================] - ETA: 0s - loss: 154.0341  
+Epoch 81: val_loss did not improve from 130.58696
+160/160 [==============================] - 394s 2s/step - loss: 154.0341 - val_loss: 138.6623
+Epoch 82/100
+160/160 [==============================] - ETA: 0s - loss: 152.1181  
+Epoch 82: val_loss did not improve from 130.58696
+160/160 [==============================] - 408s 3s/step - loss: 152.1181 - val_loss: 135.6869
+Epoch 83/100
+160/160 [==============================] - ETA: 0s - loss: 158.4803  
+Epoch 83: val_loss did not improve from 130.58696
+160/160 [==============================] - 397s 2s/step - loss: 158.4803 - val_loss: 133.1067
+Epoch 84/100
+160/160 [==============================] - ETA: 0s - loss: 146.0812  
+Epoch 84: val_loss did not improve from 130.58696
+160/160 [==============================] - 388s 2s/step - loss: 146.0812 - val_loss: 138.9366
+Epoch 85/100
+160/160 [==============================] - ETA: 0s - loss: 156.9842  
+Epoch 85: val_loss did not improve from 130.58696
+160/160 [==============================] - 384s 2s/step - loss: 156.9842 - val_loss: 142.6106
+Epoch 86/100
+160/160 [==============================] - ETA: 0s - loss: 158.2235  
+Epoch 86: val_loss did not improve from 130.58696
+160/160 [==============================] - 384s 2s/step - loss: 158.2235 - val_loss: 132.3850
+Epoch 87/100
+160/160 [==============================] - ETA: 0s - loss: 151.1023  
+Epoch 87: val_loss did not improve from 130.58696
+160/160 [==============================] - 384s 2s/step - loss: 151.1023 - val_loss: 133.0095
+Epoch 88/100
+160/160 [==============================] - ETA: 0s - loss: 147.8475  
+Epoch 88: val_loss did not improve from 130.58696
+160/160 [==============================] - 387s 2s/step - loss: 147.8475 - val_loss: 146.5122
+Epoch 89/100
+160/160 [==============================] - ETA: 0s - loss: 148.8645  
+Epoch 89: val_loss did not improve from 130.58696
+160/160 [==============================] - 383s 2s/step - loss: 148.8645 - val_loss: 136.0357
+Epoch 90/100
+160/160 [==============================] - ETA: 0s - loss: 141.5524  
+Epoch 90: val_loss did not improve from 130.58696
+160/160 [==============================] - 383s 2s/step - loss: 141.5524 - val_loss: 152.2811
+Epoch 91/100
+160/160 [==============================] - ETA: 0s - loss: 150.6475  
+Epoch 91: val_loss did not improve from 130.58696
+160/160 [==============================] - 383s 2s/step - loss: 150.6475 - val_loss: 132.6755
+Epoch 92/100
+160/160 [==============================] - ETA: 0s - loss: 150.6843  
+Epoch 92: val_loss did not improve from 130.58696
+160/160 [==============================] - 383s 2s/step - loss: 150.6843 - val_loss: 145.0930
+Epoch 93/100
+160/160 [==============================] - ETA: 0s - loss: 147.8960  
+Epoch 93: val_loss did not improve from 130.58696
+160/160 [==============================] - 384s 2s/step - loss: 147.8960 - val_loss: 140.5701
+Epoch 94/100
+160/160 [==============================] - ETA: 0s - loss: 158.5540  
+Epoch 94: val_loss did not improve from 130.58696
+160/160 [==============================] - 384s 2s/step - loss: 158.5540 - val_loss: 144.3627
+Epoch 95/100
+160/160 [==============================] - ETA: 0s - loss: 145.5957  
+Epoch 95: val_loss did not improve from 130.58696
+160/160 [==============================] - 388s 2s/step - loss: 145.5957 - val_loss: 136.5921
+Epoch 96/100
+160/160 [==============================] - ETA: 0s - loss: 149.8190  
+Epoch 96: val_loss did not improve from 130.58696
+160/160 [==============================] - 386s 2s/step - loss: 149.8190 - val_loss: 139.1711
+Epoch 97/100
+160/160 [==============================] - ETA: 0s - loss: 144.8058  
+Epoch 97: val_loss did not improve from 130.58696
+160/160 [==============================] - 386s 2s/step - loss: 144.8058 - val_loss: 156.0007
+Epoch 98/100
+160/160 [==============================] - ETA: 0s - loss: 141.5524  
+Epoch 98: val_loss did not improve from 130.58696
+160/160 [==============================] - 386s 2s/step - loss: 141.5524 - val_loss: 135.0378
+Epoch 99/100
+160/160 [==============================] - ETA: 0s - loss: 138.4065  
+Epoch 99: val_loss did not improve from 130.58696
+160/160 [==============================] - 386s 2s/step - loss: 138.4065 - val_loss: 130.6579
+Epoch 100/100
+160/160 [==============================] - ETA: 0s - loss: 137.3579  
+Epoch 100: val_loss did not improve from 130.58696
+160/160 [==============================] - 386s 2s/step - loss: 137.3579 - val_loss: 142.4435
+Epoch 1/100
+160/160 [==============================] - ETA: 0s - loss: 543.0172    
+Epoch 1: val_loss improved from inf to 342.11243, saving model to model\modelCb3.h5
+160/160 [==============================] - 341s 2s/step - loss: 543.0172 - val_loss: 342.1124
+Epoch 2/100
+160/160 [==============================] - ETA: 0s - loss: 94.4426   
+Epoch 2: val_loss improved from 342.11243 to 92.22819, saving model to model\modelCb3.h5
+160/160 [==============================] - 336s 2s/step - loss: 94.4426 - val_loss: 92.2282
+Epoch 3/100
+160/160 [==============================] - ETA: 0s - loss: 84.6752   
+Epoch 3: val_loss improved from 92.22819 to 48.98853, saving model to model\modelCb3.h5
+160/160 [==============================] - 336s 2s/step - loss: 84.6752 - val_loss: 48.9885
+Epoch 4/100
+160/160 [==============================] - ETA: 0s - loss: 76.4362  
+Epoch 4: val_loss improved from 48.98853 to 48.12112, saving model to model\modelCb3.h5
+160/160 [==============================] - 336s 2s/step - loss: 76.4362 - val_loss: 48.1211
+Epoch 5/100
+160/160 [==============================] - ETA: 0s - loss: 74.2640   
+Epoch 5: val_loss improved from 48.12112 to 39.03426, saving model to model\modelCb3.h5
+160/160 [==============================] - 335s 2s/step - loss: 74.2640 - val_loss: 39.0343
+Epoch 6/100
+160/160 [==============================] - ETA: 0s - loss: 64.2613   
+Epoch 6: val_loss did not improve from 39.03426
+160/160 [==============================] - 336s 2s/step - loss: 64.2613 - val_loss: 39.2437
+Epoch 7/100
+160/160 [==============================] - ETA: 0s - loss: 66.4772  
+Epoch 7: val_loss improved from 39.03426 to 32.53773, saving model to model\modelCb3.h5
+160/160 [==============================] - 336s 2s/step - loss: 66.4772 - val_loss: 32.5377
+Epoch 8/100
+160/160 [==============================] - ETA: 0s - loss: 59.9218  
+Epoch 8: val_loss did not improve from 32.53773
+160/160 [==============================] - 336s 2s/step - loss: 59.9218 - val_loss: 34.6460
+Epoch 9/100
+160/160 [==============================] - ETA: 0s - loss: 69.3265   
+Epoch 9: val_loss improved from 32.53773 to 30.98818, saving model to model\modelCb3.h5
+160/160 [==============================] - 336s 2s/step - loss: 69.3265 - val_loss: 30.9882
+Epoch 10/100
+160/160 [==============================] - ETA: 0s - loss: 62.1521  
+Epoch 10: val_loss did not improve from 30.98818
+160/160 [==============================] - 336s 2s/step - loss: 62.1521 - val_loss: 33.8413
+Epoch 11/100
+160/160 [==============================] - ETA: 0s - loss: 67.5600   
+Epoch 11: val_loss did not improve from 30.98818
+160/160 [==============================] - 335s 2s/step - loss: 67.5600 - val_loss: 31.2820
+Epoch 12/100
+160/160 [==============================] - ETA: 0s - loss: 60.9565  
+Epoch 12: val_loss did not improve from 30.98818
+160/160 [==============================] - 337s 2s/step - loss: 60.9565 - val_loss: 33.6295
+Epoch 13/100
+160/160 [==============================] - ETA: 0s - loss: 63.2625   
+Epoch 13: val_loss improved from 30.98818 to 29.68676, saving model to model\modelCb3.h5
+160/160 [==============================] - 337s 2s/step - loss: 63.2625 - val_loss: 29.6868
+Epoch 14/100
+160/160 [==============================] - ETA: 0s - loss: 60.6628   
+Epoch 14: val_loss improved from 29.68676 to 27.67038, saving model to model\modelCb3.h5
+160/160 [==============================] - 337s 2s/step - loss: 60.6628 - val_loss: 27.6704
+Epoch 15/100
+160/160 [==============================] - ETA: 0s - loss: 59.9919  
+Epoch 15: val_loss did not improve from 27.67038
+160/160 [==============================] - 335s 2s/step - loss: 59.9919 - val_loss: 29.4024
+Epoch 16/100
+160/160 [==============================] - ETA: 0s - loss: 60.7165   
+Epoch 16: val_loss did not improve from 27.67038
+160/160 [==============================] - 332s 2s/step - loss: 60.7165 - val_loss: 28.0101
+Epoch 17/100
+160/160 [==============================] - ETA: 0s - loss: 57.1847  
+Epoch 17: val_loss did not improve from 27.67038
+160/160 [==============================] - 313s 2s/step - loss: 57.1847 - val_loss: 28.7325
+Epoch 18/100
+160/160 [==============================] - ETA: 0s - loss: 56.9868  
+Epoch 18: val_loss did not improve from 27.67038
+160/160 [==============================] - 312s 2s/step - loss: 56.9868 - val_loss: 33.0561
+Epoch 19/100
+160/160 [==============================] - ETA: 0s - loss: 61.2506  
+Epoch 19: val_loss did not improve from 27.67038
+160/160 [==============================] - 311s 2s/step - loss: 61.2506 - val_loss: 30.6524
+Epoch 20/100
+160/160 [==============================] - ETA: 0s - loss: 54.0460  
+Epoch 20: val_loss improved from 27.67038 to 26.69401, saving model to model\modelCb3.h5
+160/160 [==============================] - 316s 2s/step - loss: 54.0460 - val_loss: 26.6940
+Epoch 21/100
+160/160 [==============================] - ETA: 0s - loss: 54.2446  
+Epoch 21: val_loss did not improve from 26.69401
+160/160 [==============================] - 327s 2s/step - loss: 54.2446 - val_loss: 29.4435
+Epoch 22/100
+160/160 [==============================] - ETA: 0s - loss: 62.3500  
+Epoch 22: val_loss did not improve from 26.69401
+160/160 [==============================] - 347s 2s/step - loss: 62.3500 - val_loss: 27.3591
+Epoch 23/100
+160/160 [==============================] - ETA: 0s - loss: 57.7050  
+Epoch 23: val_loss did not improve from 26.69401
+160/160 [==============================] - 330s 2s/step - loss: 57.7050 - val_loss: 29.1505
+Epoch 24/100
+160/160 [==============================] - ETA: 0s - loss: 53.3118  
+Epoch 24: val_loss did not improve from 26.69401
+160/160 [==============================] - 319s 2s/step - loss: 53.3118 - val_loss: 27.3962
+Epoch 25/100
+160/160 [==============================] - ETA: 0s - loss: 59.3694  
+Epoch 25: val_loss did not improve from 26.69401
+160/160 [==============================] - 317s 2s/step - loss: 59.3694 - val_loss: 31.0311
+Epoch 26/100
+160/160 [==============================] - ETA: 0s - loss: 46.1838  
+Epoch 26: val_loss did not improve from 26.69401
+160/160 [==============================] - 316s 2s/step - loss: 46.1838 - val_loss: 27.9991
+Epoch 27/100
+160/160 [==============================] - ETA: 0s - loss: 61.5240   
+Epoch 27: val_loss did not improve from 26.69401
+160/160 [==============================] - 323s 2s/step - loss: 61.5240 - val_loss: 36.1028
+Epoch 28/100
+160/160 [==============================] - ETA: 0s - loss: 52.5176  
+Epoch 28: val_loss improved from 26.69401 to 26.36374, saving model to model\modelCb3.h5
+160/160 [==============================] - 326s 2s/step - loss: 52.5176 - val_loss: 26.3637
+Epoch 29/100
+160/160 [==============================] - ETA: 0s - loss: 55.1856  
+Epoch 29: val_loss did not improve from 26.36374
+160/160 [==============================] - 318s 2s/step - loss: 55.1856 - val_loss: 27.3474
+Epoch 30/100
+160/160 [==============================] - ETA: 0s - loss: 54.2481  
+Epoch 30: val_loss did not improve from 26.36374
+160/160 [==============================] - 314s 2s/step - loss: 54.2481 - val_loss: 28.1091
+Epoch 31/100
+160/160 [==============================] - ETA: 0s - loss: 53.1324   
+Epoch 31: val_loss did not improve from 26.36374
+160/160 [==============================] - 314s 2s/step - loss: 53.1324 - val_loss: 30.5182
+Epoch 32/100
+160/160 [==============================] - ETA: 0s - loss: 53.7068  
+Epoch 32: val_loss did not improve from 26.36374
+160/160 [==============================] - 314s 2s/step - loss: 53.7068 - val_loss: 32.2421
+Epoch 33/100
+160/160 [==============================] - ETA: 0s - loss: 51.9520  
+Epoch 33: val_loss did not improve from 26.36374
+160/160 [==============================] - 312s 2s/step - loss: 51.9520 - val_loss: 29.7600
+Epoch 34/100
+160/160 [==============================] - ETA: 0s - loss: 51.0950   
+Epoch 34: val_loss did not improve from 26.36374
+160/160 [==============================] - 311s 2s/step - loss: 51.0950 - val_loss: 28.4775
+Epoch 35/100
+160/160 [==============================] - ETA: 0s - loss: 47.0023  
+Epoch 35: val_loss did not improve from 26.36374
+160/160 [==============================] - 311s 2s/step - loss: 47.0023 - val_loss: 29.2575
+Epoch 36/100
+160/160 [==============================] - ETA: 0s - loss: 53.3073  
+Epoch 36: val_loss did not improve from 26.36374
+160/160 [==============================] - 311s 2s/step - loss: 53.3073 - val_loss: 27.9429
+Epoch 37/100
+160/160 [==============================] - ETA: 0s - loss: 55.4041  
+Epoch 37: val_loss did not improve from 26.36374
+160/160 [==============================] - 316s 2s/step - loss: 55.4041 - val_loss: 28.5551
+Epoch 38/100
+160/160 [==============================] - ETA: 0s - loss: 50.8432  
+Epoch 38: val_loss did not improve from 26.36374
+160/160 [==============================] - 310s 2s/step - loss: 50.8432 - val_loss: 31.7158
+Epoch 39/100
+160/160 [==============================] - ETA: 0s - loss: 46.8870  
+Epoch 39: val_loss did not improve from 26.36374
+160/160 [==============================] - 311s 2s/step - loss: 46.8870 - val_loss: 26.4854
+Epoch 40/100
+160/160 [==============================] - ETA: 0s - loss: 49.5576  
+Epoch 40: val_loss did not improve from 26.36374
+160/160 [==============================] - 311s 2s/step - loss: 49.5576 - val_loss: 28.3788
+Epoch 41/100
+160/160 [==============================] - ETA: 0s - loss: 53.6827  
+Epoch 41: val_loss did not improve from 26.36374
+160/160 [==============================] - 311s 2s/step - loss: 53.6827 - val_loss: 26.6967
+Epoch 42/100
+160/160 [==============================] - ETA: 0s - loss: 48.3239  
+Epoch 42: val_loss improved from 26.36374 to 25.16044, saving model to model\modelCb3.h5
+160/160 [==============================] - 312s 2s/step - loss: 48.3239 - val_loss: 25.1604
+Epoch 43/100
+160/160 [==============================] - ETA: 0s - loss: 49.6155  
+Epoch 43: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 49.6155 - val_loss: 27.7636
+Epoch 44/100
+160/160 [==============================] - ETA: 0s - loss: 50.9168  
+Epoch 44: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 50.9168 - val_loss: 26.9302
+Epoch 45/100
+160/160 [==============================] - ETA: 0s - loss: 49.2050  
+Epoch 45: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 49.2050 - val_loss: 25.3120
+Epoch 46/100
+160/160 [==============================] - ETA: 0s - loss: 46.3571  
+Epoch 46: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 46.3571 - val_loss: 26.3418
+Epoch 47/100
+160/160 [==============================] - ETA: 0s - loss: 49.4650   
+Epoch 47: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 49.4650 - val_loss: 27.6395
+Epoch 48/100
+160/160 [==============================] - ETA: 0s - loss: 48.4225   
+Epoch 48: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 48.4225 - val_loss: 28.6695
+Epoch 49/100
+160/160 [==============================] - ETA: 0s - loss: 44.2419  
+Epoch 49: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 44.2419 - val_loss: 32.5799
+Epoch 50/100
+160/160 [==============================] - ETA: 0s - loss: 49.2592  
+Epoch 50: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 49.2592 - val_loss: 27.5908
+Epoch 51/100
+160/160 [==============================] - ETA: 0s - loss: 41.9280  
+Epoch 51: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 41.9280 - val_loss: 28.3705
+Epoch 52/100
+160/160 [==============================] - ETA: 0s - loss: 47.1854  
+Epoch 52: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 47.1854 - val_loss: 37.0073
+Epoch 53/100
+160/160 [==============================] - ETA: 0s - loss: 46.3424  
+Epoch 53: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 46.3424 - val_loss: 25.8006
+Epoch 54/100
+160/160 [==============================] - ETA: 0s - loss: 47.7227  
+Epoch 54: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 47.7227 - val_loss: 27.9146
+Epoch 55/100
+160/160 [==============================] - ETA: 0s - loss: 51.4141  
+Epoch 55: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 51.4141 - val_loss: 26.5617
+Epoch 56/100
+160/160 [==============================] - ETA: 0s - loss: 42.8076  
+Epoch 56: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 42.8076 - val_loss: 31.2025
+Epoch 57/100
+160/160 [==============================] - ETA: 0s - loss: 42.4857  
+Epoch 57: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 42.4857 - val_loss: 29.4010
+Epoch 58/100
+160/160 [==============================] - ETA: 0s - loss: 48.2998  
+Epoch 58: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 48.2998 - val_loss: 28.5729
+Epoch 59/100
+160/160 [==============================] - ETA: 0s - loss: 44.7277  
+Epoch 59: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 44.7277 - val_loss: 27.2361
+Epoch 60/100
+160/160 [==============================] - ETA: 0s - loss: 42.1332  
+Epoch 60: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 42.1332 - val_loss: 29.8908
+Epoch 61/100
+160/160 [==============================] - ETA: 0s - loss: 46.4886   
+Epoch 61: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 46.4886 - val_loss: 26.3653
+Epoch 62/100
+160/160 [==============================] - ETA: 0s - loss: 40.1491  
+Epoch 62: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 40.1491 - val_loss: 28.8289
+Epoch 63/100
+160/160 [==============================] - ETA: 0s - loss: 48.8700  
+Epoch 63: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 48.8700 - val_loss: 27.6550
+Epoch 64/100
+160/160 [==============================] - ETA: 0s - loss: 44.2616  
+Epoch 64: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 44.2616 - val_loss: 27.5659
+Epoch 65/100
+160/160 [==============================] - ETA: 0s - loss: 37.8397  
+Epoch 65: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 37.8397 - val_loss: 31.2605
+Epoch 66/100
+160/160 [==============================] - ETA: 0s - loss: 44.5360  
+Epoch 66: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 44.5360 - val_loss: 29.3308
+Epoch 67/100
+160/160 [==============================] - ETA: 0s - loss: 44.5080   
+Epoch 67: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 44.5080 - val_loss: 26.3093
+Epoch 68/100
+160/160 [==============================] - ETA: 0s - loss: 41.3920  
+Epoch 68: val_loss did not improve from 25.16044
+160/160 [==============================] - 313s 2s/step - loss: 41.3920 - val_loss: 26.4415
+Epoch 69/100
+160/160 [==============================] - ETA: 0s - loss: 38.6698  
+Epoch 69: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 38.6698 - val_loss: 26.8682
+Epoch 70/100
+160/160 [==============================] - ETA: 0s - loss: 40.5328   
+Epoch 70: val_loss did not improve from 25.16044
+160/160 [==============================] - 312s 2s/step - loss: 40.5328 - val_loss: 25.9316
+Epoch 71/100
+160/160 [==============================] - ETA: 0s - loss: 39.0283  
+Epoch 71: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 39.0283 - val_loss: 28.6740
+Epoch 72/100
+160/160 [==============================] - ETA: 0s - loss: 44.7665  
+Epoch 72: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 44.7665 - val_loss: 29.2686
+Epoch 73/100
+160/160 [==============================] - ETA: 0s - loss: 42.5510  
+Epoch 73: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 42.5510 - val_loss: 27.8622
+Epoch 74/100
+160/160 [==============================] - ETA: 0s - loss: 38.7881  
+Epoch 74: val_loss did not improve from 25.16044
+160/160 [==============================] - 311s 2s/step - loss: 38.7881 - val_loss: 32.5960
+Epoch 75/100
+160/160 [==============================] - ETA: 0s - loss: 43.7105   
+Epoch 75: val_loss improved from 25.16044 to 24.62616, saving model to model\modelCb3.h5
+160/160 [==============================] - 311s 2s/step - loss: 43.7105 - val_loss: 24.6262
+Epoch 76/100
+160/160 [==============================] - ETA: 0s - loss: 44.0994  
+Epoch 76: val_loss did not improve from 24.62616
+160/160 [==============================] - 311s 2s/step - loss: 44.0994 - val_loss: 28.3058
+Epoch 77/100
+160/160 [==============================] - ETA: 0s - loss: 38.1528  
+Epoch 77: val_loss did not improve from 24.62616
+160/160 [==============================] - 311s 2s/step - loss: 38.1528 - val_loss: 32.8951
+Epoch 78/100
+160/160 [==============================] - ETA: 0s - loss: 39.0638  
+Epoch 78: val_loss did not improve from 24.62616
+160/160 [==============================] - 311s 2s/step - loss: 39.0638 - val_loss: 25.9129
+Epoch 79/100
+160/160 [==============================] - ETA: 0s - loss: 35.2130  
+Epoch 79: val_loss did not improve from 24.62616
+160/160 [==============================] - 311s 2s/step - loss: 35.2130 - val_loss: 25.7388
+Epoch 80/100
+160/160 [==============================] - ETA: 0s - loss: 38.9474  
+Epoch 80: val_loss did not improve from 24.62616
+160/160 [==============================] - 312s 2s/step - loss: 38.9474 - val_loss: 27.3679
+Epoch 81/100
+160/160 [==============================] - ETA: 0s - loss: 38.2401  
+Epoch 81: val_loss did not improve from 24.62616
+160/160 [==============================] - 312s 2s/step - loss: 38.2401 - val_loss: 26.4029
+Epoch 82/100
+160/160 [==============================] - ETA: 0s - loss: 38.1219  
+Epoch 82: val_loss did not improve from 24.62616
+160/160 [==============================] - 310s 2s/step - loss: 38.1219 - val_loss: 28.5348
+Epoch 83/100
+160/160 [==============================] - ETA: 0s - loss: 40.4400  
+Epoch 83: val_loss did not improve from 24.62616
+160/160 [==============================] - 311s 2s/step - loss: 40.4400 - val_loss: 26.1123
+Epoch 84/100
+160/160 [==============================] - ETA: 0s - loss: 37.7589  
+Epoch 84: val_loss did not improve from 24.62616
+160/160 [==============================] - 310s 2s/step - loss: 37.7589 - val_loss: 25.0761
+Epoch 85/100
+160/160 [==============================] - ETA: 0s - loss: 39.0098  
+Epoch 85: val_loss did not improve from 24.62616
+160/160 [==============================] - 310s 2s/step - loss: 39.0098 - val_loss: 27.6383
+Epoch 86/100
+160/160 [==============================] - ETA: 0s - loss: 42.6620  
+Epoch 86: val_loss did not improve from 24.62616
+160/160 [==============================] - 310s 2s/step - loss: 42.6620 - val_loss: 27.7920
+Epoch 87/100
+160/160 [==============================] - ETA: 0s - loss: 43.2319   
+Epoch 87: val_loss did not improve from 24.62616
+160/160 [==============================] - 310s 2s/step - loss: 43.2319 - val_loss: 31.2197
+Epoch 88/100
+160/160 [==============================] - ETA: 0s - loss: 38.8849  
+Epoch 88: val_loss did not improve from 24.62616
+160/160 [==============================] - 310s 2s/step - loss: 38.8849 - val_loss: 26.0670
+Epoch 89/100
+160/160 [==============================] - ETA: 0s - loss: 47.4834  
+Epoch 89: val_loss did not improve from 24.62616
+160/160 [==============================] - 310s 2s/step - loss: 47.4834 - val_loss: 26.1802
+Epoch 90/100
+160/160 [==============================] - ETA: 0s - loss: 36.7767  
+Epoch 90: val_loss did not improve from 24.62616
+160/160 [==============================] - 310s 2s/step - loss: 36.7767 - val_loss: 26.1764
+Epoch 91/100
+160/160 [==============================] - ETA: 0s - loss: 37.2596  
+Epoch 91: val_loss did not improve from 24.62616
+160/160 [==============================] - 311s 2s/step - loss: 37.2596 - val_loss: 24.6421
+Epoch 92/100
+160/160 [==============================] - ETA: 0s - loss: 37.9456   
+Epoch 92: val_loss did not improve from 24.62616
+160/160 [==============================] - 310s 2s/step - loss: 37.9456 - val_loss: 27.1920
+Epoch 93/100
+160/160 [==============================] - ETA: 0s - loss: 41.5222  
+Epoch 93: val_loss did not improve from 24.62616
+160/160 [==============================] - 310s 2s/step - loss: 41.5222 - val_loss: 30.0349
+Epoch 94/100
+160/160 [==============================] - ETA: 0s - loss: 34.9061  
+Epoch 94: val_loss did not improve from 24.62616
+160/160 [==============================] - 310s 2s/step - loss: 34.9061 - val_loss: 26.7321
+Epoch 95/100
+160/160 [==============================] - ETA: 0s - loss: 39.1088  
+Epoch 95: val_loss did not improve from 24.62616
+160/160 [==============================] - 310s 2s/step - loss: 39.1088 - val_loss: 31.5505
+Epoch 96/100
+160/160 [==============================] - ETA: 0s - loss: 36.0211  
+Epoch 96: val_loss did not improve from 24.62616
+160/160 [==============================] - 310s 2s/step - loss: 36.0211 - val_loss: 24.8973
+Epoch 97/100
+160/160 [==============================] - ETA: 0s - loss: 35.4696  
+Epoch 97: val_loss did not improve from 24.62616
+160/160 [==============================] - 310s 2s/step - loss: 35.4696 - val_loss: 40.1604
+Epoch 98/100
+160/160 [==============================] - ETA: 0s - loss: 39.7004  
+Epoch 98: val_loss did not improve from 24.62616
+160/160 [==============================] - 310s 2s/step - loss: 39.7004 - val_loss: 31.7393
+Epoch 99/100
+160/160 [==============================] - ETA: 0s - loss: 37.3243  
+Epoch 99: val_loss did not improve from 24.62616
+160/160 [==============================] - 310s 2s/step - loss: 37.3243 - val_loss: 26.9849
+Epoch 100/100
+160/160 [==============================] - ETA: 0s - loss: 37.5553  
+Epoch 100: val_loss did not improve from 24.62616
+160/160 [==============================] - 311s 2s/step - loss: 37.5553 - val_loss: 26.2965
+Epoch 1/100
+160/160 [==============================] - ETA: 0s - loss: 694.1127    
+Epoch 1: val_loss improved from inf to 395.31610, saving model to model\modelCr3.h5
+160/160 [==============================] - 313s 2s/step - loss: 694.1127 - val_loss: 395.3161
+Epoch 2/100
+160/160 [==============================] - ETA: 0s - loss: 101.3746  
+Epoch 2: val_loss improved from 395.31610 to 97.47527, saving model to model\modelCr3.h5
+160/160 [==============================] - 310s 2s/step - loss: 101.3746 - val_loss: 97.4753
+Epoch 3/100
+160/160 [==============================] - ETA: 0s - loss: 76.4392  
+Epoch 3: val_loss improved from 97.47527 to 45.22758, saving model to model\modelCr3.h5
+160/160 [==============================] - 310s 2s/step - loss: 76.4392 - val_loss: 45.2276
+Epoch 4/100
+160/160 [==============================] - ETA: 0s - loss: 69.3987  
+Epoch 4: val_loss did not improve from 45.22758
+160/160 [==============================] - 309s 2s/step - loss: 69.3987 - val_loss: 46.4195
+Epoch 5/100
+160/160 [==============================] - ETA: 0s - loss: 62.2352  
+Epoch 5: val_loss improved from 45.22758 to 35.54838, saving model to model\modelCr3.h5
+160/160 [==============================] - 310s 2s/step - loss: 62.2352 - val_loss: 35.5484
+Epoch 6/100
+160/160 [==============================] - ETA: 0s - loss: 63.6592  
+Epoch 6: val_loss did not improve from 35.54838
+160/160 [==============================] - 310s 2s/step - loss: 63.6592 - val_loss: 41.9721
+Epoch 7/100
+160/160 [==============================] - ETA: 0s - loss: 63.7119   
+Epoch 7: val_loss did not improve from 35.54838
+160/160 [==============================] - 309s 2s/step - loss: 63.7119 - val_loss: 38.1892
+Epoch 8/100
+160/160 [==============================] - ETA: 0s - loss: 60.7566  
+Epoch 8: val_loss improved from 35.54838 to 31.90964, saving model to model\modelCr3.h5
+160/160 [==============================] - 310s 2s/step - loss: 60.7566 - val_loss: 31.9096
+Epoch 9/100
+160/160 [==============================] - ETA: 0s - loss: 55.1966  
+Epoch 9: val_loss improved from 31.90964 to 30.46076, saving model to model\modelCr3.h5
+160/160 [==============================] - 310s 2s/step - loss: 55.1966 - val_loss: 30.4608
+Epoch 10/100
+160/160 [==============================] - ETA: 0s - loss: 57.5725  
+Epoch 10: val_loss improved from 30.46076 to 28.30196, saving model to model\modelCr3.h5
+160/160 [==============================] - 309s 2s/step - loss: 57.5725 - val_loss: 28.3020
+Epoch 11/100
+160/160 [==============================] - ETA: 0s - loss: 54.8763   
+Epoch 11: val_loss did not improve from 28.30196
+160/160 [==============================] - 309s 2s/step - loss: 54.8763 - val_loss: 28.6565
+Epoch 12/100
+160/160 [==============================] - ETA: 0s - loss: 56.3268   
+Epoch 12: val_loss improved from 28.30196 to 27.39460, saving model to model\modelCr3.h5
+160/160 [==============================] - 310s 2s/step - loss: 56.3268 - val_loss: 27.3946
+Epoch 13/100
+160/160 [==============================] - ETA: 0s - loss: 50.6307  
+Epoch 13: val_loss improved from 27.39460 to 26.60507, saving model to model\modelCr3.h5
+160/160 [==============================] - 309s 2s/step - loss: 50.6307 - val_loss: 26.6051
+Epoch 14/100
+160/160 [==============================] - ETA: 0s - loss: 53.0974  
+Epoch 14: val_loss did not improve from 26.60507
+160/160 [==============================] - 309s 2s/step - loss: 53.0974 - val_loss: 26.9465
+Epoch 15/100
+160/160 [==============================] - ETA: 0s - loss: 55.0978   
+Epoch 15: val_loss improved from 26.60507 to 24.07615, saving model to model\modelCr3.h5
+160/160 [==============================] - 310s 2s/step - loss: 55.0978 - val_loss: 24.0761
+Epoch 16/100
+160/160 [==============================] - ETA: 0s - loss: 50.2489  
+Epoch 16: val_loss did not improve from 24.07615
+160/160 [==============================] - 309s 2s/step - loss: 50.2489 - val_loss: 26.7647
+Epoch 17/100
+160/160 [==============================] - ETA: 0s - loss: 48.7016  
+Epoch 17: val_loss did not improve from 24.07615
+160/160 [==============================] - 309s 2s/step - loss: 48.7016 - val_loss: 28.0418
+Epoch 18/100
+160/160 [==============================] - ETA: 0s - loss: 54.8294  
+Epoch 18: val_loss did not improve from 24.07615
+160/160 [==============================] - 309s 2s/step - loss: 54.8294 - val_loss: 30.7165
+Epoch 19/100
+160/160 [==============================] - ETA: 0s - loss: 49.3702  
+Epoch 19: val_loss did not improve from 24.07615
+160/160 [==============================] - 309s 2s/step - loss: 49.3702 - val_loss: 25.1950
+Epoch 20/100
+160/160 [==============================] - ETA: 0s - loss: 52.4960  
+Epoch 20: val_loss did not improve from 24.07615
+160/160 [==============================] - 309s 2s/step - loss: 52.4960 - val_loss: 25.9713
+Epoch 21/100
+160/160 [==============================] - ETA: 0s - loss: 49.0037   
+Epoch 21: val_loss did not improve from 24.07615
+160/160 [==============================] - 309s 2s/step - loss: 49.0037 - val_loss: 25.6035
+Epoch 22/100
+160/160 [==============================] - ETA: 0s - loss: 54.5642  
+Epoch 22: val_loss did not improve from 24.07615
+160/160 [==============================] - 309s 2s/step - loss: 54.5642 - val_loss: 29.2603
+Epoch 23/100
+160/160 [==============================] - ETA: 0s - loss: 47.9127  
+Epoch 23: val_loss did not improve from 24.07615
+160/160 [==============================] - 309s 2s/step - loss: 47.9127 - val_loss: 25.0938
+Epoch 24/100
+160/160 [==============================] - ETA: 0s - loss: 46.4115  
+Epoch 24: val_loss did not improve from 24.07615
+160/160 [==============================] - 309s 2s/step - loss: 46.4115 - val_loss: 26.9622
+Epoch 25/100
+160/160 [==============================] - ETA: 0s - loss: 51.2340   
+Epoch 25: val_loss did not improve from 24.07615
+160/160 [==============================] - 309s 2s/step - loss: 51.2340 - val_loss: 25.7084
+Epoch 26/100
+160/160 [==============================] - ETA: 0s - loss: 51.6309   
+Epoch 26: val_loss did not improve from 24.07615
+160/160 [==============================] - 309s 2s/step - loss: 51.6309 - val_loss: 28.8166
+Epoch 27/100
+160/160 [==============================] - ETA: 0s - loss: 43.7355  
+Epoch 27: val_loss did not improve from 24.07615
+160/160 [==============================] - 310s 2s/step - loss: 43.7355 - val_loss: 27.0288
+Epoch 28/100
+160/160 [==============================] - ETA: 0s - loss: 47.0799  
+Epoch 28: val_loss did not improve from 24.07615
+160/160 [==============================] - 309s 2s/step - loss: 47.0799 - val_loss: 27.9486
+Epoch 29/100
+160/160 [==============================] - ETA: 0s - loss: 45.6058   
+Epoch 29: val_loss did not improve from 24.07615
+160/160 [==============================] - 309s 2s/step - loss: 45.6058 - val_loss: 32.7112
+Epoch 30/100
+160/160 [==============================] - ETA: 0s - loss: 42.3498  
+Epoch 30: val_loss did not improve from 24.07615
+160/160 [==============================] - 309s 2s/step - loss: 42.3498 - val_loss: 28.1113
+Epoch 31/100
+160/160 [==============================] - ETA: 0s - loss: 42.2560  
+Epoch 31: val_loss did not improve from 24.07615
+160/160 [==============================] - 309s 2s/step - loss: 42.2560 - val_loss: 26.6168
+Epoch 32/100
+160/160 [==============================] - ETA: 0s - loss: 45.9483  
+Epoch 32: val_loss did not improve from 24.07615
+160/160 [==============================] - 309s 2s/step - loss: 45.9483 - val_loss: 27.3585
+Epoch 33/100
+160/160 [==============================] - ETA: 0s - loss: 40.2743  
+Epoch 33: val_loss did not improve from 24.07615
+160/160 [==============================] - 309s 2s/step - loss: 40.2743 - val_loss: 24.6338
+Epoch 34/100
+160/160 [==============================] - ETA: 0s - loss: 41.4153  
+Epoch 34: val_loss did not improve from 24.07615
+160/160 [==============================] - 309s 2s/step - loss: 41.4153 - val_loss: 24.4204
+Epoch 35/100
+160/160 [==============================] - ETA: 0s - loss: 40.2775  
+Epoch 35: val_loss did not improve from 24.07615
+160/160 [==============================] - 313s 2s/step - loss: 40.2775 - val_loss: 24.7792
+Epoch 36/100
+160/160 [==============================] - ETA: 0s - loss: 40.3017   
+Epoch 36: val_loss did not improve from 24.07615
+160/160 [==============================] - 330s 2s/step - loss: 40.3017 - val_loss: 26.1275
+Epoch 37/100
+160/160 [==============================] - ETA: 0s - loss: 39.6341  
+Epoch 37: val_loss did not improve from 24.07615
+160/160 [==============================] - 405s 3s/step - loss: 39.6341 - val_loss: 25.8163
+Epoch 38/100
+160/160 [==============================] - ETA: 0s - loss: 45.7199  
+Epoch 38: val_loss improved from 24.07615 to 23.87157, saving model to model\modelCr3.h5
+160/160 [==============================] - 410s 3s/step - loss: 45.7199 - val_loss: 23.8716
+Epoch 39/100
+160/160 [==============================] - ETA: 0s - loss: 40.1318  
+Epoch 39: val_loss did not improve from 23.87157
+160/160 [==============================] - 398s 2s/step - loss: 40.1318 - val_loss: 30.5623
+Epoch 40/100
+160/160 [==============================] - ETA: 0s - loss: 39.2821  
+Epoch 40: val_loss did not improve from 23.87157
+160/160 [==============================] - 385s 2s/step - loss: 39.2821 - val_loss: 24.1091
+Epoch 41/100
+160/160 [==============================] - ETA: 0s - loss: 47.1206  
+Epoch 41: val_loss improved from 23.87157 to 23.70516, saving model to model\modelCr3.h5
+160/160 [==============================] - 375s 2s/step - loss: 47.1206 - val_loss: 23.7052
+Epoch 42/100
+160/160 [==============================] - ETA: 0s - loss: 41.0469  
+Epoch 42: val_loss did not improve from 23.70516
+160/160 [==============================] - 362s 2s/step - loss: 41.0469 - val_loss: 25.8370
+Epoch 43/100
+160/160 [==============================] - ETA: 0s - loss: 40.6751  
+Epoch 43: val_loss did not improve from 23.70516
+160/160 [==============================] - 360s 2s/step - loss: 40.6751 - val_loss: 28.0234
+Epoch 44/100
+160/160 [==============================] - ETA: 0s - loss: 38.6059  
+Epoch 44: val_loss did not improve from 23.70516
+160/160 [==============================] - 330s 2s/step - loss: 38.6059 - val_loss: 25.4295
+Epoch 45/100
+160/160 [==============================] - ETA: 0s - loss: 40.3553  
+Epoch 45: val_loss did not improve from 23.70516
+160/160 [==============================] - 310s 2s/step - loss: 40.3553 - val_loss: 32.4981
+Epoch 46/100
+160/160 [==============================] - ETA: 0s - loss: 41.7714  
+Epoch 46: val_loss did not improve from 23.70516
+160/160 [==============================] - 309s 2s/step - loss: 41.7714 - val_loss: 25.8772
+Epoch 47/100
+160/160 [==============================] - ETA: 0s - loss: 40.6357  
+Epoch 47: val_loss improved from 23.70516 to 22.39930, saving model to model\modelCr3.h5
+160/160 [==============================] - 311s 2s/step - loss: 40.6357 - val_loss: 22.3993
+Epoch 48/100
+160/160 [==============================] - ETA: 0s - loss: 41.7063  
+Epoch 48: val_loss did not improve from 22.39930
+160/160 [==============================] - 309s 2s/step - loss: 41.7063 - val_loss: 23.7878
+Epoch 49/100
+160/160 [==============================] - ETA: 0s - loss: 42.3189  
+Epoch 49: val_loss did not improve from 22.39930
+160/160 [==============================] - 309s 2s/step - loss: 42.3189 - val_loss: 28.7685
+Epoch 50/100
+160/160 [==============================] - ETA: 0s - loss: 42.7592  
+Epoch 50: val_loss did not improve from 22.39930
+160/160 [==============================] - 309s 2s/step - loss: 42.7592 - val_loss: 25.6172
+Epoch 51/100
+160/160 [==============================] - ETA: 0s - loss: 37.4679  
+Epoch 51: val_loss improved from 22.39930 to 21.57189, saving model to model\modelCr3.h5
+160/160 [==============================] - 309s 2s/step - loss: 37.4679 - val_loss: 21.5719
+Epoch 52/100
+160/160 [==============================] - ETA: 0s - loss: 39.2266  
+Epoch 52: val_loss did not improve from 21.57189
+160/160 [==============================] - 308s 2s/step - loss: 39.2266 - val_loss: 24.6811
+Epoch 53/100
+160/160 [==============================] - ETA: 0s - loss: 36.4094  
+Epoch 53: val_loss did not improve from 21.57189
+160/160 [==============================] - 308s 2s/step - loss: 36.4094 - val_loss: 24.4290
+Epoch 54/100
+160/160 [==============================] - ETA: 0s - loss: 37.5077  
+Epoch 54: val_loss did not improve from 21.57189
+160/160 [==============================] - 309s 2s/step - loss: 37.5077 - val_loss: 25.6849
+Epoch 55/100
+160/160 [==============================] - ETA: 0s - loss: 40.1549  
+Epoch 55: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 40.1549 - val_loss: 27.9923
+Epoch 56/100
+160/160 [==============================] - ETA: 0s - loss: 36.7612  
+Epoch 56: val_loss did not improve from 21.57189
+160/160 [==============================] - 308s 2s/step - loss: 36.7612 - val_loss: 24.1327
+Epoch 57/100
+160/160 [==============================] - ETA: 0s - loss: 36.8709  
+Epoch 57: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 36.8709 - val_loss: 23.8294
+Epoch 58/100
+160/160 [==============================] - ETA: 0s - loss: 35.7846  
+Epoch 58: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 35.7846 - val_loss: 24.4607
+Epoch 59/100
+160/160 [==============================] - ETA: 0s - loss: 38.5789  
+Epoch 59: val_loss did not improve from 21.57189
+160/160 [==============================] - 308s 2s/step - loss: 38.5789 - val_loss: 25.8200
+Epoch 60/100
+160/160 [==============================] - ETA: 0s - loss: 38.0000  
+Epoch 60: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 38.0000 - val_loss: 21.9263
+Epoch 61/100
+160/160 [==============================] - ETA: 0s - loss: 39.8606  
+Epoch 61: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 39.8606 - val_loss: 29.7868
+Epoch 62/100
+160/160 [==============================] - ETA: 0s - loss: 42.2665  
+Epoch 62: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 42.2665 - val_loss: 33.9501
+Epoch 63/100
+160/160 [==============================] - ETA: 0s - loss: 37.4668  
+Epoch 63: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 37.4668 - val_loss: 21.8795
+Epoch 64/100
+160/160 [==============================] - ETA: 0s - loss: 34.6593  
+Epoch 64: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 34.6593 - val_loss: 23.8707
+Epoch 65/100
+160/160 [==============================] - ETA: 0s - loss: 35.6616  
+Epoch 65: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 35.6616 - val_loss: 22.4450
+Epoch 66/100
+160/160 [==============================] - ETA: 0s - loss: 34.3243  
+Epoch 66: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 34.3243 - val_loss: 23.6100
+Epoch 67/100
+160/160 [==============================] - ETA: 0s - loss: 35.7185  
+Epoch 67: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 35.7185 - val_loss: 22.9773
+Epoch 68/100
+160/160 [==============================] - ETA: 0s - loss: 36.7271  
+Epoch 68: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 36.7271 - val_loss: 25.8809
+Epoch 69/100
+160/160 [==============================] - ETA: 0s - loss: 38.0509  
+Epoch 69: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 38.0509 - val_loss: 22.3670
+Epoch 70/100
+160/160 [==============================] - ETA: 0s - loss: 36.4382  
+Epoch 70: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 36.4382 - val_loss: 29.4736
+Epoch 71/100
+160/160 [==============================] - ETA: 0s - loss: 37.1500  
+Epoch 71: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 37.1500 - val_loss: 23.6040
+Epoch 72/100
+160/160 [==============================] - ETA: 0s - loss: 33.0943  
+Epoch 72: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 33.0943 - val_loss: 23.2814
+Epoch 73/100
+160/160 [==============================] - ETA: 0s - loss: 34.9850  
+Epoch 73: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 34.9850 - val_loss: 25.4283
+Epoch 74/100
+160/160 [==============================] - ETA: 0s - loss: 35.8422  
+Epoch 74: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 35.8422 - val_loss: 22.4882
+Epoch 75/100
+160/160 [==============================] - ETA: 0s - loss: 39.7223  
+Epoch 75: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 39.7223 - val_loss: 22.7866
+Epoch 76/100
+160/160 [==============================] - ETA: 0s - loss: 35.0435  
+Epoch 76: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 35.0435 - val_loss: 29.8288
+Epoch 77/100
+160/160 [==============================] - ETA: 0s - loss: 33.9549  
+Epoch 77: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 33.9549 - val_loss: 26.3402
+Epoch 78/100
+160/160 [==============================] - ETA: 0s - loss: 32.8380  
+Epoch 78: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 32.8380 - val_loss: 26.2468
+Epoch 79/100
+160/160 [==============================] - ETA: 0s - loss: 32.2601  
+Epoch 79: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 32.2601 - val_loss: 24.4353
+Epoch 80/100
+160/160 [==============================] - ETA: 0s - loss: 33.4035  
+Epoch 80: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 33.4035 - val_loss: 30.0627
+Epoch 81/100
+160/160 [==============================] - ETA: 0s - loss: 37.8874  
+Epoch 81: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 37.8874 - val_loss: 22.8207
+Epoch 82/100
+160/160 [==============================] - ETA: 0s - loss: 30.8597  
+Epoch 82: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 30.8597 - val_loss: 25.2422
+Epoch 83/100
+160/160 [==============================] - ETA: 0s - loss: 37.4129  
+Epoch 83: val_loss did not improve from 21.57189
+160/160 [==============================] - 308s 2s/step - loss: 37.4129 - val_loss: 21.7912
+Epoch 84/100
+160/160 [==============================] - ETA: 0s - loss: 40.8811  
+Epoch 84: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 40.8811 - val_loss: 24.5843
+Epoch 85/100
+160/160 [==============================] - ETA: 0s - loss: 34.1255  
+Epoch 85: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 34.1255 - val_loss: 23.1811
+Epoch 86/100
+160/160 [==============================] - ETA: 0s - loss: 35.3252  
+Epoch 86: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 35.3252 - val_loss: 23.6104
+Epoch 87/100
+160/160 [==============================] - ETA: 0s - loss: 33.1898  
+Epoch 87: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 33.1898 - val_loss: 23.8110
+Epoch 88/100
+160/160 [==============================] - ETA: 0s - loss: 32.0906  
+Epoch 88: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 32.0906 - val_loss: 23.7066
+Epoch 89/100
+160/160 [==============================] - ETA: 0s - loss: 36.8556  
+Epoch 89: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 36.8556 - val_loss: 25.0150
+Epoch 90/100
+160/160 [==============================] - ETA: 0s - loss: 34.9706  
+Epoch 90: val_loss did not improve from 21.57189
+160/160 [==============================] - 306s 2s/step - loss: 34.9706 - val_loss: 30.2924
+Epoch 91/100
+160/160 [==============================] - ETA: 0s - loss: 35.4844  
+Epoch 91: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 35.4844 - val_loss: 22.2371
+Epoch 92/100
+160/160 [==============================] - ETA: 0s - loss: 31.1449  
+Epoch 92: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 31.1449 - val_loss: 23.1408
+Epoch 93/100
+160/160 [==============================] - ETA: 0s - loss: 31.0857  
+Epoch 93: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 31.0857 - val_loss: 25.6109
+Epoch 94/100
+160/160 [==============================] - ETA: 0s - loss: 33.5881  
+Epoch 94: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 33.5881 - val_loss: 22.3385
+Epoch 95/100
+160/160 [==============================] - ETA: 0s - loss: 37.4679  
+Epoch 95: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 37.4679 - val_loss: 24.7439
+Epoch 96/100
+160/160 [==============================] - ETA: 0s - loss: 34.2237  
+Epoch 96: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 34.2237 - val_loss: 24.0958
+Epoch 97/100
+160/160 [==============================] - ETA: 0s - loss: 31.9621  
+Epoch 97: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 31.9621 - val_loss: 22.5331
+Epoch 98/100
+160/160 [==============================] - ETA: 0s - loss: 33.4827  
+Epoch 98: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 33.4827 - val_loss: 23.9352
+Epoch 99/100
+160/160 [==============================] - ETA: 0s - loss: 36.9134  
+Epoch 99: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 36.9134 - val_loss: 22.5043
+Epoch 100/100
+160/160 [==============================] - ETA: 0s - loss: 34.1386
+Epoch 100: val_loss did not improve from 21.57189
+160/160 [==============================] - 307s 2s/step - loss: 34.1386 - val_loss: 27.4222
+1/1 [==============================] - 3s 3s/step
+1/1 [==============================] - 3s 3s/step
+1/1 [==============================] - 3s 3s/step
+(500, 750)
+(500, 748)
+(500, 748)
+(500, 750, 3)
+(500, 750, 3)
+PSNR: 29.454674751560212
+SSIM: [[0.75826826]
+ [0.87510943]
+ [0.75521621]]
